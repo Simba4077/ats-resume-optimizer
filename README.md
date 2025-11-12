@@ -1,11 +1,11 @@
-# 🧠 ATS Resume Optimizer
+# ATS Resume Optimizer
 
 A lightweight AI-powered tool that automatically tailors your resume to a specific job description.  
 It reads your resume, analyzes the job posting, and rewrites your content to better match keywords — while keeping it natural and professional.
 
 ---
 
-## ✨ Features
+## Features
 
 - Extracts text from PDF or DOCX resumes  
 - Analyzes job descriptions for relevant skills & keywords  
@@ -15,7 +15,7 @@ It reads your resume, analyzes the job posting, and rewrites your content to bet
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. **Upload your resume** (PDF or DOCX)  
 2. **Upload a job description**  
@@ -24,7 +24,7 @@ It reads your resume, analyzes the job posting, and rewrites your content to bet
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Backend:** FastAPI, Uvicorn  
 - **AI Integration:** OpenAI GPT API  
@@ -35,7 +35,7 @@ It reads your resume, analyzes the job posting, and rewrites your content to bet
 
 ---
 
-## 🛠️ Local Setup
+## Local Setup
 
 ### 1. Clone the Repository
 ```bash
