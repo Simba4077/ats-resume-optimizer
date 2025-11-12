@@ -1,67 +1,85 @@
-# ATS Resume Optimizer
+# 🧠 ATS Resume Optimizer
 
-This project helps you automatically tailor your resume to a specific job description.  
-It parses your resume, identifies key details from a job posting, and uses AI to rewrite and reformat your resume so it matches the role while still sounding natural.
-
----
-
-## Features
-
-- Extracts text from uploaded resumes (PDF or DOCX)
-- Analyzes job descriptions for skills and keywords
-- Uses the OpenAI API to rewrite and enhance the resume
-- Keeps the formatting readable and professional
-- Exports a new, ready-to-download PDF resume
+A lightweight AI-powered tool that automatically tailors your resume to a specific job description.  
+It reads your resume, analyzes the job posting, and rewrites your content to better match keywords — while keeping it natural and professional.
 
 ---
 
-## How It Works
+## ✨ Features
 
-1. Upload your resume file  
-2. Paste in a job description  
-3. The app compares both, rewrites the resume using GPT, and inserts relevant keywords naturally  
-4. A new PDF is generated that’s easier for both recruiters and ATS systems to read
+- Extracts text from PDF or DOCX resumes  
+- Analyzes job descriptions for relevant skills & keywords  
+- Uses the OpenAI API to rewrite and optimize resume content  
+- Preserves human readability and structure  
+- Exports a new, ready-to-download PDF resume  
 
 ---
 
-## Tech Stack
+## ⚙️ How It Works
+
+1. **Upload your resume** (PDF or DOCX)  
+2. **Upload a job description**  
+3. The app compares both and rewrites your resume using GPT to highlight matching skills  
+4. A polished PDF version is generated — recruiter- and ATS-friendly  
+
+---
+
+## 🧩 Tech Stack
 
 - **Backend:** FastAPI, Uvicorn  
-- **AI:** OpenAI GPT API  
+- **AI Integration:** OpenAI GPT API  
 - **Parsing:** Textract, PyMuPDF  
-- **PDF Generation:** ReportLab  
-- **Frontend (optional):** HTML / React  
-- **Deployment:** Render or Railway
+- **PDF Builder:** ReportLab  
+- **Frontend (optional):** React / Vite  
+- **Deployment:** Render or Railway  
 
 ---
 
-## Setup (Local)
+## 🛠️ Local Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Simba4077/ats-resume-optimizer.git
-   cd ats-resume-optimizer/server
-
-
-Optional: create a virtual env  
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Simba4077/ats-resume-optimizer.git
+cd ats-resume-optimizer/server
+```
+### 2. Create a VM (Optional)
+```bash
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 # or
 source .venv/bin/activate  # Mac/Linux
+```
 
+### 3. Install Dependencies 
+```bash
+pip install -r requirements.txt
+```
+### 4. Add your OpenAI API key  
+Create a .env file inside the server folder and add:  
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
+### 5. Run the backend  
+```bash 
+uvicorn main:app --reload --port 8000
+```
 
-Install dependencies:  
-`pip install -r requirements.txt  
-`
+### 6. Run the frontend 
+```bash
+cd ../client
+npm install
+npm run dev
+```  
 
-Add your OpenAI key --> Create a .env file in the server folder and add:
-`  
+Then open the URL printed in your terminal (usually http://localhost:5173).  
 
-Run the server in one terminal:
-`uvicorn main:app --reload --port 8000`  
+---
+## License  
+This project is licensed under the MIT License.
 
-Run the program in another terminal:    
-Go to \client folder and run
-`npm run dev`  
-Follow the local host url 
+---
 
+## Notes
+-- Works best with clearly formatted resumes  
+-- Model automatically adapts tone and phrasing for the job role  
+-- You can edit pdf_builder.py or tailoring.py to customize formatting or logic  
