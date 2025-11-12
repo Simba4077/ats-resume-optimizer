@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+python-dotenv
+pdfminer.six
+python-docx
+openai

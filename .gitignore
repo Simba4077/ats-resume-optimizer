@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Node (if you add a frontend)
+node_modules/
+dist/
+build/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# PDFs and uploads
+*.pdf
+uploads/
+test/

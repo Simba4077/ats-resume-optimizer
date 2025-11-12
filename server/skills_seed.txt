@@ -1,0 +1,37 @@
+python
+java
+c++
+javascript
+typescript
+react
+node
+fastapi
+flask
+django
+postman
+rest api
+graphql
+sql
+mysql
+postgresql
+mongodb
+docker
+kubernetes
+aws
+gcp
+azure
+linux
+git
+pandas
+numpy
+scikit-learn
+tensorflow
+pytorch
+nlp
+computer vision
+data analysis
+statistics
+unit testing
+integration testing
+agile
+scrum
